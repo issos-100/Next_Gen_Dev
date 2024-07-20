@@ -1,0 +1,187 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(51, 51, 51, 0.8);
+    color: #fff;
+    padding: 1rem 2rem;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+header nav ul li {
+    margin: 0;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(51, 51, 51, 0.8);
+    color: #fff;
+}
+
+.intro-content {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+#intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.intro-image img, .skills-image img, .contact-image img {
+    width: 100%;
+    max-width: 400px;
+}
+
+#intro h2 {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+}
+
+#intro p {
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.social-icons a {
+    margin: 0 0.5rem;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.buttons {
+    margin-top: 1rem;
+}
+
+.buttons .btn {
+    background: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#skills, #projects, #contact {
+    padding: 2rem;
+    margin: 1rem 0;
+    background: rgba(51, 51, 51, 0.8);
+    border: 1px solid #ccc;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    color: #fff;
+}
+
+.skill {
+    text-align: center;
+}
+
+
+.skill-image {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+    cursor: pointer;
+    -webkit-transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+    -moz-transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+    -ms-transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+    -o-transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+}
+
+.projects-image-1 {
+    width: 200px;
+    height: 350px;
+}
+
+.projects-image-2 {
+    width: 500px;
+    height: 350px;
+}
+
+.self-image {
+    width: 70px;
+    height: 100px;
+}
+
+.skill-image.expanded {
+    width: 200px;
+    height: 200px;
+    transform: scale(1.1);
+}
+
+footer {
+    background: rgba(51, 51, 51, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.fade-in {
+    animation: fadeIn 2s ease-in;
+    opacity: 1;
+    color: #fff;
+}
+
+.slide-in {
+    animation: slideIn 2s ease-in-out;
+    color: #fff;
+    -webkit-animation: slideIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.5;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
